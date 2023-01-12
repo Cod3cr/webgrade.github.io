@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+  <style>
+    .cursor{
+      z-index: 100000000000;
+    }
+
+    #contact{
+  height: 90vh;
+  width: 100%;
+  background-color: black;
+}
+
+#about{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    margin-top: -459px;
+}
+
+.wrapper{
+  align-items: center;
+  justify-content: center;
+}
+
+ @media screen and (max-width: 465px) {
+.wrapper h1{
+  font-size: 48px;
+  padding: 7px 7px;
+  font-weight: 600;
+}
+ }
+
+@media screen and (max-width:450px) {
+  .wrapper h1{
+  font-size: 32px;
+  padding: 3.5px 3.5px;
+  font-weight: 400;
+}
+.contain p{
+  font-size: 32px;
+}
+}
+
+@media screen and (max-width: 560px) {
+  .wrapper h1{
+  font-size: 43px;
+  padding: 3.5px 3.5px;
+  font-weight: 400;
+}
+.contain p{
+  font-size: 43px;
+}
+}
+
+@media screen and (min-width: 767px) {
+.cursor{
+        position: absolute;
+        border: 1px solid #0F6AC6;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        opacity: 1;
+        z-index: 100000000000;
+        visibility: visible;
+
+}
+}
+.exper{
+    position: absolute;
+    font-size: 6em;
+    font-weight: 900 ;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: -780px;
+    margin-top: 70px;
+    animation: slide-up 1s ease;
+    animation-delay: .04s;
+    transition: 2s;
+}.is{
+    position: absolute;
+    font-size: 6em;
+    font-weight: 900 ;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 70px;
+    animation: slide-up 1s ease;
+    animation-delay: .08s;
+    transition: 2s;
+}
+.loading{
+    position: absolute;
+    font-size: 6em;
+    font-weight: 900 ;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: -690px;
+    margin-top: 300px;
+    animation: slide-up 1s ease;
+    animation-delay: .08s;
+    transition: 2s;
+}
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        display: none;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: #2d2d2d;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, .15 );
+        border-radius: 1.2rem 1.2rem 0 0;
+        transition: .3s;
+    }
+    .header{
+        display: none;
+    }
+    .wrapper{
+        margin-top: 80px;
+    }
+}
+.nav {
+    max-width: 968px;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 1230px) {
+  .intro,
+  .into,
+  .timer{
+    padding-left: 300px;
+  }
+  .count{
+  margin-left: -550px;
+ margin-right: 550px;
+}
+.counter{
+  margin-right: 550px;
+}
+}
+
+@media screen and (max-width: 970px) {
+  .intro,
+  .into,
+  .timer{
+    padding-left: 400px;
+  }
+  .count{
+  margin-left: -450px;
+ margin-right: 450px;
+}
+.counter{
+  margin-right: 450px;
+}
+}
+@media screen and (max-width: 825px) {
+  .intro{
+    font-size: 5em;
+    font-weight: 700 ;
+}
+
+.into{
+    font-size: 5em;
+    font-weight: 700 ;
+}
+
+.new{
+    font-size: 5em;
+    font-weight: 700 ;
+}
+.web{
+    font-size: 5em;
+    font-weight: 700 ;
+}
+.exper{
+    font-size: 5em;
+    font-weight: 700 ;
+}
+.is{
+    font-size: 5em;
+    font-weight: 700 ;
+}
+.loading{
+    font-size: 5em;
+    font-weight: 700 ;
+}
+.timer{
+    font-size: 20px;
+    font-weight: 700 ;
+}
+}
+@media screen and (max-width: 768px) {
+  .intro,
+  .into,
+  .timer{
+    padding-left: 0px;
+  } 
+  .new,
+.web,
+.exper,
+.is,
+.loading{
+    font-size: 3em;
+    font-weight: 900 ;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 0;
+    margin-top: 0;
+}
+.timer{
+    font-size: 2em;
+    font-weight: 900 ;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 0;
+    margin-top: 0;
+}
+.count,
+.counter{
+    font-size: 2.5em;
+    font-weight: 700;
+    z-index: 1;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.into{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.count{
+margin-top: -555px;
+margin-left: 80px;
+}
+.counter{
+ margin-top: -555px;
+margin-right: -70px;
+}
+.into{
+    margin-top: -433px;
+}
+.new{
+    margin-top: -333px;
+    margin-left: -300px;
+}
+.web{
+    margin-top: -333px;
+    margin-left: 146px;
+}
+.exper{
+    margin-top: -222px;
+    margin-left: -120px;
+}
+.is{
+    margin-top: -222px;
+    margin-left: 250px; 
+}
+.loading{
+  margin-top: -111px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+.timer{
+    margin-top: -11px;
+}
+}
+@media screen and (max-width: 440px) {
+  .new{
+    margin-top: -333px;
+    margin-left: 0px;
+}
+  .web{
+    margin-top: -222px;
+    margin-left: 0px;
+  }
+  .exper{
+    margin-top: -122px;
+    margin-left: 0;
+}
+.is{
+    margin-top: -11px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.loading{
+    margin-top: 89px;
+}
+.start{
+    margin-left: 40px;
+}
+
+.timer{
+    margin-top: 189px;
+}
+}
+  </style>
+    <div class="cursor outer"></div>
+<div class="cursor inner"></div>
+    <div class="preloader">
+        <div class="counter">0</div>
+        <div class="count"> - 100</div>
+        <div class="into">YOUR</div>
+        <div class="intro new">WEB</div>
+        <div class="intro web">EXPERIENCE</div>
+        <div class="intro exper">IS ABOUT </div>
+        <div class="intro is">TO BE</div>
+        <div class="intro loading">UPGRADED</div>
+        <div class="timer"><span class="start">Please Wait</span><br/><span class="end">A Few Seconds.</span></div>
+    </div>
+    <a name="top"></a>
+    <section id="home">
+        <div class="wrapper">
+        <div class="swipe one">
+            <h3></h3>
+        </div>
+         <div class="swipe two">
+            <h1>My Services↓</h1>
+        </div>
+        <div class="swipe three">
+            <h1>
+            </h1>
+        </div>
+        <div class="swipe">
+            <div class="contain">
+                <p><span class="typed-text"></span><span class="curso">&nbsp;</span></p>
+            </div>
+        </div>
+    <header class="header" id="header">
+        <nav class="nav container">
+          <a href="index.html" class="nav__logo"><img src="My project-1 (1).png" /></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="preloader.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#4" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Return to Home
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <nav class="navig">
+        <a href="preloader.html" class="navig__link">
+          <i class="uil-estate nav__icon navig__icon"></i>
+          <span class="navig__text">Home</span>
+        </a>
+        <a href="#about" class="navig__link navig__link">
+          <i class="uil-user navig__icon"></i>
+          <span class="navig__text">Services</span>
+        </a>
+        <a href="#4" class="navig__link">
+          <i class="uil-briefcase-alt navig__icon"></i>
+          <span class="navig__text">Contact</span>
+        </a>
+        <a href="index.html" class="navig__link">
+          <i class="uil-message navig__icon"></i>
+          <span class="navig__text">Return to Home</span>
+        </a>
+      </nav>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id="2"></section>
+<section id="about">
+      <!-- Brand Designing products -->
+      <section id="products">
+      <div class="small-container">
+        <h2 class="title">Brand Designing</h2>
+        <div class="row">
+          <div class="col-4">
+           <a href="product_details1.html"><img src="logodesign.png" alt="" /></a>
+              <h4>Logo Design</h4>
+            <!-- <p>A$9.99</p> -->
+          </div>
+      
+          <div class="col-4">
+            <a href="product_details2.html"><img src="slogans.png" alt="" /></a>
+            <h4>Slogans</h4>
+            <!-- <p>A$4.99</p> -->
+          </div>
+      
+          <div class="col-4">
+            <a href="product_details3.html"><img src="flyers.png" alt="" /></a>
+            <h4>Flyers / Poster</h4>
+            <!-- <p>A7.99 - $10.99</p> -->
+          </div>
+        </div>
+        <h2 class="title">UI / UX Design</h2>
+        <div class="row">
+          <div class="col-4">
+            <a href="product_details4.html"><img src="design.png" alt="" /></a>
+            <h4>Website ReDesign</h4>
+            <!-- <p>A$19.99</p> -->
+          </div>
+          </div>
+          <h2 class="title">Front-End Developer</h2>
+          <div class="row">
+          <div class="col-4">
+            <a href="product_details5.html"><img src="wordpress.png" alt="" /></a>
+            <h4>WordPress Website</h4>
+            <!-- <p>A$14.99-A$24.99</p> -->
+          </div>
+      
+          <div class="col-4">
+            <a href="product_details6.html"><img src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /></a>
+            <h4>Coded Website</h4>
+            <!-- <p>A$9.99-A$29.99</p> -->
+          </div>
+
+          <div class="col-4">
+            <a href="product_details7.html"><img src="renew.png" alt="" /></a>
+            <h4>Website Renewal Service</h4>
+            <!-- <p>A$4.99/mth</p> -->
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </section>  
+    
+    <style>
+        .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+  }
+  
+  .col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+  }
+  
+  .col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+  }
+
+  
+  .categories {
+    margin: 70px 0;
+  }
+  
+  .col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+  }
+  
+  .col-3 img {
+    width: 100%;
+  }
+  
+  .small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+  }
+  
+  .col-4 img {
+    width: 100%;
+  }
+  
+  .title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+  }
+  .title::after {
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  .body h4 {
+    color: #555;
+    font-weight: normal;
+    margin-left: 20px;
+  }
+  
+  .col-4 p {
+    font-size: 14px;
+  }
+  
+  .rating .fas {
+    color: #ff523b;
+  }
+  
+  .rating .far {
+    color: #ff523b;
+  }
+  
+  .col-4:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Offer */
+  
+  .offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+  }
+  
+  .col-2 .offer-img {
+    padding: 50px;
+  }
+  
+  small {
+    color: #555;
+  }
+  
+  /* testimonial */
+  
+  .testimonial {
+    padding-top: 100px;
+  }
+  
+  .testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  
+  .testimonial .col-3 img {
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+  
+  .testimonial .col-3:hover {
+    transform: translateY(-10px);
+  }
+  
+  .fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+  }
+  
+  .col-3 p {
+    font-size: 14px;
+    margin: 12px 0;
+    color: #777777;
+  }
+  
+  .testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .brands {
+    margin: 100px auto;
+  }
+  
+  .col-5 {
+    width: 160px;
+  }
+  
+  .col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+  
+  .col-5 img:hover {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(0);
+  }
+  
+  /* all products page */
+  
+  .row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+  }
+  
+  select {
+    border: 1px solid #ff523b;
+    padding: 5px;
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  .page-btn {
+    margin: 0 auto 80px;
+  }
+  
+  .page-btn span {
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .page-btn span:hover {
+    background: #ff523b;
+    color: #ffffff;
+  }
+  
+  /* single product details */
+  
+  .single-product {
+    margin-top: 80px;
+  }
+  
+  .single-product .col-2 img {
+    padding: 0;
+  }
+  
+  .single-product .col-2 {
+    padding: 20px;
+  }
+  
+  .single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .single-product .fas {
+    color: #ff523b;
+    margin-left: 10px;
+  }
+  
+  .small-img-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+  }
+  
+    </style>
+</section> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id="4"></section>
+<section id="contact">
+
+  <div class="container-contact">
+		<div class="contact-box">
+			<div class="left">
+        <h2>Contact Us</h2>
+      <div class="gmail">
+        <h3>Email:</h3>
+        <h4>samhith.alluri2@gmail.com</h4>
+      </div>
+      <div class="socials">
+        <br>
+        <br>
+        <a href="index.html" class="nav__logo"><img src="My project-1 (2).png" /></a>
+      </div>
+      </div>
+			<div class="right">
+				<h2>Contact Form</h2>
+        <form action="https://formsubmit.co/1636f3928655edadd50adb8c9cc9650b" method="POST">
+          <input type="text" name="name" placeholder="Name" class="field"  required>
+          <input type="email" name="email" placeholder="email" class="field"  required>
+          <select name="service"  class="field" >
+            <option>UI / UX Design</option>
+            <option>Front-End Developer</option>
+            <option>Brand Design</option>
+          </select>
+          <textarea type="message" name="Message" placeholder="Message" class="field"  required></textarea>
+          <button type="submit" class="btn" >Send</button>
+          <a href="Terms & Conditions.docx" download ><p class="tac">By Submitting this form you agree to our Terms and Conditions</p></a>
+          <br>
+          <br>
+     </form>
+			</div>
+		</div>
+	</div>
+<style>
+
+.tac{
+  font-size: 15px;
+  color: red;
+margin-top: 10px;
+}
+  .socials{
+    margin-top: 50px;
+  }
+  
+  .fab:hover .cursor{
+    cursor: pointer;
+  }
+  
+  .fab{
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+    .gmail{
+    margin-top: 75px;
+    }
+  
+  .gmail h3{
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  
+  .gmail h4{
+    font-size: 1.5rem;
+  }
+  
+    .container-contact:hover .cursor{
+      z-index: 100000000000;
+    }
+    .container-contact{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    color: #fff;
+  }
+  
+  .container-contact:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("img/bg.jpg") no-repeat center;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1;
+  }
+  .contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #5D98FF;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+  }
+  
+  .left{
+    margin-top: 45px;
+    height: 100%;
+  }
+  
+  .right{
+    padding: 25px 40px;
+  }
+  
+  h2{
+    display: block;
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  h2:after{
+    content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      height: 4px;
+      width: 50px;
+      border-radius: 2px;
+      background-color: #fff;
+  }
+  
+  .field{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+  }
+  
+  .field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea{
+    min-height: 150px;
+  }
+  
+  .btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .btn:hover{
+      background-color: #27ae60;
+  }
+  
+  .field:focus{
+      border: 2px solid rgba(30,85,250,0.47);
+      background-color: #fff;
+  }
+  
+  @media screen and (max-width: 880px){
+    .contact-box{
+      grid-template-columns: 1fr;
+    }
+    .fab{
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  .gmail h3{
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  
+  .gmail h4{
+    font-size: 1.5rem;
+  }
+  
+  }
+  </style>
+
+</section>
+
+        <script>
+        /*=============== SHOW MENU ===============*/
+
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/*===== MENU SHOW =====*/
+/* Validate If Constant Exists */
+if(navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    })
+}
+
+/*===== MENU HIDDEN =====*/
+/* Validate If Constant Exists */
+if(navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+    })
+}
+const cursor = document.querySelectorAll(".cursor");
+const links = document.querySelectorAll(".link");
+
+window.addEventListener("mousemove", (e) => {
+
+  let x = e.pageX;
+  let y = e.pageY;
+
+  cursor.forEach(el => {
+    el.style.left = `${x}px`;
+    el.style.top = `${y}px`;
+
+    links.forEach(link => {
+      link.addEventListener("mouseenter", () => {
+        el.classList.add("hover");
+      })
+      link.addEventListener("mouseleave", () => {
+        el.classList.remove("hover");
+      })
+    })
+
+  })
+
+})
+
+
+
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Please Scroll Down↓","Please Scroll Down↓", "Please Scroll Down↓" , "Please Scroll Down↓"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  }
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  }
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+
+
+$(document).ready(function () {
+  // typing animation
+  (function ($) {
+    $.fn.writeText = function (content) {
+      var contentArray = content.split(""),
+        current = 0,
+        elem = this;
+      setInterval(function () {
+        if (current < contentArray.length) {
+          elem.text(elem.text() + contentArray[current++]);
+        }
+      }, 80);
+    };
+  })(jQuery);
+
+  // input text for typing animation
+  $("#holder").writeText("WEB DESIGNER + FRONT-END DEVELOPER");
+
+  // initialize wow.js
+  new WOW().init();
+
+  // Push the body and the nav over by 285px over
+  var main = function () {
+    $(".fa-bars").click(function () {
+      $(".nav-screen").animate(
+        {
+          right: "0px"
+        },
+        200
+      );
+
+      $("body").animate(
+        {
+          right: "285px"
+        },
+        200
+      );
+    });
+
+    // Then push them back */
+    $(".fa-times").click(function () {
+      $(".nav-screen").animate(
+        {
+          right: "-285px"
+        },
+        200
+      );
+
+      $("body").animate(
+        {
+          right: "0px"
+        },
+        200
+      );
+    });
+
+    $(".nav-links a").click(function () {
+      $(".nav-screen").animate(
+        {
+          right: "-285px"
+        },
+        500
+      );
+
+      $("body").animate(
+        {
+          right: "0px"
+        },
+        500
+      );
+    });
+  };
+
+  $(document).ready(main);
+
+  // initiate full page scroll
+
+  $("#fullpage").fullpage({
+    scrollBar: true,
+    responsiveWidth: 400,
+    navigation: true,
+    navigationTooltips: ["home", "about", "portfolio", "contact", "connect"],
+    anchors: ["home", "about", "portfolio", "contact", "connect"],
+    menu: "#myMenu",
+    fitToSection: false,
+
+    afterLoad: function (anchorLink, index) {
+      var loadedSection = $(this);
+
+      //using index
+      if (index == 1) {
+        /* add opacity to arrow */
+        $(".fa-chevron-down").each(function () {
+          $(this).css("opacity", "1");
+        });
+        $(".header-links a").each(function () {
+          $(this).css("color", "white");
+        });
+        $(".header-links").css("background-color", "transparent");
+      } else if (index != 1) {
+        $(".header-links a").each(function () {
+          $(this).css("color", "black");
+        });
+        $(".header-links").css("background-color", "white");
+      }
+
+      //using index
+      if (index == 2) {
+        /* animate skill bars */
+        $(".skillbar").each(function () {
+          $(this)
+            .find(".skillbar-bar")
+            .animate(
+              {
+                width: $(this).attr("data-percent")
+              },
+              2500
+            );
+        });
+      }
+    }
+  });
+
+  // move section down one
+  $(document).on("click", "#moveDown", function () {
+    $.fn.fullpage.moveSectionDown();
+  });
+
+  // fullpage.js link navigation
+  $(document).on("click", "#skills", function () {
+    $.fn.fullpage.moveTo(2);
+  });
+
+  $(document).on("click", "#projects", function () {
+    $.fn.fullpage.moveTo(3);
+  });
+
+  $(document).on("click", "#contact", function () {
+    $.fn.fullpage.moveTo(4);
+  });
+
+  // smooth scrolling
+  $(function () {
+    $("a[href*=#]:not([href=#])").click(function () {
+      if (
+        location.pathname.replace(/^\//, "") ==
+          this.pathname.replace(/^\//, "") &&
+        location.hostname == this.hostname
+      ) {
+        var target = $(this.hash);
+        target = target.length
+          ? target
+          : $("[name=" + this.hash.slice(1) + "]");
+        if (target.length) {
+          $("html,body").animate(
+            {
+              scrollTop: target.offset().top
+            },
+            700
+          );
+          return false;
+        }
+      }
+    });
+  });
+
+  //ajax form
+  $(function () {
+    // Get the form.
+    var form = $("#ajax-contact");
+
+    // Get the messages div.
+    var formMessages = $("#form-messages");
+
+    // Set up an event listener for the contact form.
+    $(form).submit(function (e) {
+      // Stop the browser from submitting the form.
+      e.preventDefault();
+
+      // Serialize the form data.
+      var formData = $(form).serialize();
+
+      // Submit the form using AJAX.
+      $.ajax({
+        type: "POST",
+        url: $(form).attr("action"),
+        data: formData
+      })
+        .done(function (response) {
+          // Make sure that the formMessages div has the 'success' class.
+          $(formMessages).removeClass("error");
+          $(formMessages).addClass("success");
+
+          // Set the message text.
+          $(formMessages).text(response);
+
+          // Clear the form.
+          $("#name").val("");
+          $("#email").val("");
+          $("#message").val("");
+        })
+        .fail(function (data) {
+          // Make sure that the formMessages div has the 'error' class.
+          $(formMessages).removeClass("success");
+          $(formMessages).addClass("error");
+
+          // Set the message text.
+          if (data.responseText !== "") {
+            $(formMessages).text(data.responseText);
+          } else {
+            $(formMessages).text(
+              "Oops! An error occured and your message could not be sent."
+            );
+          }
+        });
+    });
+  });
+});
+
+var skills = {
+  ph: 89,
+  il: 70,
+  in: 20,
+  fl: 45
+};
+
+$.each(skills, function(key, value) {
+  var skillbar = $("." + key);
+
+  skillbar.animate(
+    {
+      width: value + "%"
+    },
+    300,
+    function() {
+      $(".speech-bubble").fadeIn();
+    }
+  );
+}); 
+
+  </script>
+       <script src="main.js"></script>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coded Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    <style>
+        .nav {
+            max-width: 968px;
+            height: 73px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav__logo img{
+  max-height: 72px;
+  width: 333px;
+}
+          </style>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="My project-1 (1).png" /></a>
+            <div class="nav__menu" id="nav-menu">
+
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <nav class="navig">
+        <a href="index.html" class="navig__link">
+          <i class="uil-message navig__icon"></i>
+          <span class="navig__text">Return to Home</span>
+        </a>
+        <a href="preloader.html" class="navig__link">
+            <i class="uil-message navig__icon"></i>
+            <span class="navig__text">Return to Services</span>
+          </a>
+      </nav>
+    <div class="containerr">
+        <div class="card">
+            <div class="shoeBackground">
+                <div class="gradients">
+                    <div class="gradient second" color="blue"></div>
+                    <div class="gradient" color="red"></div>
+                    <div class="gradient" color="green"></div>
+                    <div class="gradient" color="orange"></div>
+                    <div class="gradient" color="black"></div>
+                </div>
+                <h1 class="nike">Coded Website</h1>
+                <img src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="logo" style="height: 90%; width: 90%;" >
+            </div>
+            <div class="info">
+                <div class="shoeName">
+                    <div>
+                        <h1 class="big">Coded Website</h1>
+                        <!-- <span class="new">new</span> -->
+                    </div>
+                    <h3 class="small">Front-End Developer</h3>
+                </div>
+                <div class="description">
+                    <h3 class="title">Description</h3>
+                    <p class="text">
+                   If you want your website made with code then you will receive a website with custom coded elements that have the standards of a 21st Century Website, Like all my other services the website will be unique, creative and will match your criteria. 
+                    </p>
+                </div>
+                <div class="buy-price">
+                    <a href="#order" class="buy"><i class="fas fa-shopping-cart"></i>Order</a>
+                    <div class="price">
+                        <!-- <i class="fas fa-dollar-sign"></i>
+                        <h1>A9.99 - A29.99</h1> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        a{
+            text-decoration: none;
+        }
+.container {
+    z-index: 7;
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+}
+
+.header {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #151515;
+}
+
+.nav {
+    max-width: 968px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+    color: #fff;
+    font-weight: 700;
+}
+
+.nav__logo:hover {
+    color: #113CCF;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.nav__logo{
+  width: 100%;
+}
+
+.nav__logo img{
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 333px;
+}
+
+.nav__btns {
+    display: flex;
+    align-items: center;
+}
+
+.theme-customization {
+    font-size: 1.25rem;
+    color: hsl(250, 8%, 15%);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.nav__toggle:hover,
+.theme-customization:hover {
+    color: hsl(0, 69%, 61%);
+}
+
+.nav__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.navig{
+    visibility: hidden;
+}
+
+        .navig {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 17px 17px 0px 0px;
+    display: flex;
+    z-index: 1;
+    overflow-x: auto;
+    visibility: visible;
+}
+.navig__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+.navig__link:hover {
+    background-color: #eeeeee;
+}
+.navig__link--active {
+    color: #009578;
+}
+.navig__icon {
+    font-size: 18px;
+}
+
+
+@media screen and (min-width: 767px) {
+    .cursor {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        opacity: 1;
+        z-index: 100000000000;
+        visibility: visible;
+      }
+
+      .outer {
+        border: 1px solid #f7f7f770;
+      }
+}
+
+.nav__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+.nav__link:hover {
+    color: #113CCF;
+    transition: .5s;
+}
+
+.nav__link:hover + .cursor{
+    transform: translate(-50%, -50%) scale(4);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav__icon {
+    font-size: 1.2rem;
+}
+
+.nav__close {
+    position: absolute;
+    right: 1.2rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* show menu */
+.show-menu {
+    bottom: 0;
+}
+
+@media screen and (max-width: 350px) {
+    .nav__menu {
+        padding: 2rem .25rem 4rem;
+    }
+
+    .nav__list {
+        column-gap: 0;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .header {
+        top: 0;
+        bottom: initial;
+    }
+
+    .nav {
+        height: 4.5rem;
+        column-gap: 1rem;
+        z-index: 1;
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    .nav__menu {
+        margin-left: auto;
+    }
+
+    .theme-customization {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+    </style>
+    <section id="order">
+              <!-- <form action="https://formsubmit.co/1636f3928655edadd50adb8c9cc9650b" method="POST">
+                <input type="text" name="name" placeholder="Name" class="field"  required>
+                <input type="email" name="email" placeholder="email" class="field"  required>
+                <select name="service"  class="field" >
+                  <option>Logo Design</option>
+                </select>
+                <textarea type="message" name="Message" placeholder="Details" class="field"  required></textarea>
+                <button type="submit" class="btn" >Send</button> 
+           </form>-->
+           <div class="containerrr">
+                       <div class="text">Order Form</div>
+           <form action="https://formsubmit.co/1636f3928655edadd50adb8c9cc9650b" method="POST">
+              <div class="form-row">
+                 <div class="input-data">
+                    <input type="text" name="name"  required>
+                    <div class="underline"></div>
+                    <label for="">Name</label>
+                 </div>
+              </div>
+              <div class="form-row">
+                 <div class="input-data">
+                    <input type="email" name="email" required>
+                    <div class="underline"></div>
+                    <label for="">Email</label>
+                 </div>
+              </div>
+              <div class="form-row">
+                <div class="input-data">
+                    <select name="service" class="field" >
+                        <option>Portfolio Website </option>
+                        <!-- A$19.99 -->
+                        <option>Business Website </option>
+                        <!-- A$29.99 -->
+                        <option>Blog Website </option>
+                        <!-- A$9.99 -->
+                        <option>Personal Website </option>
+                        <!-- A$13.99 -->
+                        <option>Education Website </option>
+                        <!-- A$24.99 -->
+                        <option>Media Website Website </option>
+                        <!-- A$16.99 -->
+                      </select>
+                </div>
+             </div>
+              <div class="form-row">
+                 <div class="input-data textarea">
+                    <textarea rows="8" cols="80" typpe="message" name="message" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="">Details</label>
+                    <br />
+                    <div class="form-row submit-btn">
+                       <div class="input-data">
+                          <div class="inner"></div>
+                          <input type="submit" value="submit">
+                          <a href="Terms & Conditions.docx" download ><p class="tac">By Submitting this form you agree to our Terms and Conditions</p></a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <style>
+
+
+.tac{
+  font-size: 15px;
+  color: red;
+margin-top: 10px;
+}
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+.containerrr{
+  max-width: 800px;
+  background: #fff;
+  width: auto;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+margin: 0 auto;
+}
+.containerrr .text{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.containerrr form{
+  padding: 30px 0 0 0;
+}
+.containerrr form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 370px) {
+    .submit-btn .input-data input{
+  font-size: 10px;
+}
+}
+/* @media (max-width: 700px) {
+  .containerrr .text{
+    font-size: 30px;
+  }
+  .containerrr form{
+    padding: 10px 0 0 0;
+  }
+  .containerrr form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+} */
+      </style>
+    
+      </section>
+<style>
+:root{
+    --primary: #2175f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #efefef;
+}
+
+.containerr{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 860px;
+}
+
+.shoeBackground{
+    position: relative;
+    width: 50%;
+    height: 475px;
+    box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
+    0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+.gradients{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+
+.first{
+    z-index: 0;
+    animation: 1s width ease;
+}
+
+@keyframes width{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.second{
+    z-index: -1;
+}
+
+.gradient[color="blue"]{
+    background-image: linear-gradient(45deg, #0136af, #22abfa);
+}
+
+.gradient[color="red"]{
+    background-image: linear-gradient(45deg, #d62926, #ee625f);
+}
+
+.gradient[color="green"]{
+    background-image: linear-gradient(45deg, #11998e, #1ce669);
+}
+
+.gradient[color="orange"]{
+    background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
+}
+
+.gradient[color="black"]{
+    background-image: linear-gradient(45deg, #111, #666);
+}
+
+.logo{
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    top: 20px;
+}
+
+.share{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--primary);
+    transition: .5s;
+}
+
+.share:hover{
+    transform: scale(1.1);
+}
+
+.share i{
+    line-height: 50px;
+}
+
+.nike{
+    position: absolute;
+    top: 85px;
+    z-index: -1;
+    left: 15px;
+    font-size: 11rem;
+    text-transform: uppercase;
+    line-height: .9;
+    color: #fff;
+    opacity: .1;
+}
+
+.shoe{
+    position: absolute;
+    width: 140%;
+    opacity: 0;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-20deg);
+    transition: .5s;
+}
+
+.shoe.show{
+    opacity: 1;
+}
+
+.info{
+    width: 60%;
+    background-color: #fff;
+    padding: 35px 40px;
+    box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1),
+    0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.shoeName{
+    padding: 0 0 10px 0;
+}
+
+.shoeName div{
+    display: flex;
+    align-items: center;
+}
+
+.shoeName div .big{
+    margin-right: 10px;
+    font-size: 2rem;
+    color: #333;
+    line-height: 1;
+}
+
+.shoeName div .new{
+    background-color: var(--primary);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.shoeName .small{
+    font-weight: 500;
+    color: #444;
+    margin-top: 3px;
+    text-transform: capitalize;
+}
+
+.shoeName, .description, .color-containerr, .size-containerr{
+    border-bottom: 1px solid #dadada;
+}
+
+.description{
+    padding: 10px 0;
+}
+
+.title{
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.text{
+    color: #555;
+    font-size: 17px;
+}
+
+.color-containerr{
+    padding: 10px 0;
+}
+
+.colors{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.color{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 5px solid;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.color[color="blue"]{
+    background-color: #2175f5;
+    border-color: #2175f5;
+}
+
+.color[color="red"]{
+    background-color: #f84848;
+    border-color: #f84848;
+}
+
+.color[color="green"]{
+    background-color: #29b864;
+    border-color: #29b864;
+}
+
+.color[color="orange"]{
+    background-color: #ff5521;
+    border-color: #ff5521;
+}
+
+.color[color="black"]{
+    background-color: #444;
+    border-color: #444;
+}
+
+.color.active{
+    border-color: #fff;
+    box-shadow: 0 0 10px .5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.size-containerr{
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.sizes{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.size{
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #eee;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.size.active{
+    background-color: var(--primary);
+    color: #fff;
+    transition: .5s;
+}
+
+.buy-price{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+}
+
+.price h1{
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.price i{
+    font-size: 1.4rem;
+    margin-right: 1px;
+}
+
+.buy{
+    padding: .7rem 1rem;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+.buy:hover{
+    transform: scale(1.1);
+}
+
+.buy i{
+    margin-right: 2px;
+}
+
+@media (max-width: 1070px){
+    .shoe{
+        width: 135%;
+    }
+}
+
+@media (max-width: 768px){
+    .card{
+        flex-direction: column;
+        width: 100%;
+        box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card > div{
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .shoe{
+        width: 100%;
+        transform: rotate(-5deg) translateY(-50%);
+        top: 55%;
+        right: 2%;
+    }
+
+    .nike{
+        top: 20%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 600px){
+    .share{
+        width: 40px;
+        height: 40px;
+    }
+
+    .share i {
+        font-size: 1rem;
+        line-height: 40px;
+    }
+
+    .logo{
+        width: 70px;
+    }
+}
+
+@media (max-width: 490px){
+    .nike{
+        font-size: 7rem;
+    }
+
+    .shoeName div .big{
+        font-size: 1.3rem;
+    }
+
+    .small{
+        font-size: 1rem;
+    }
+
+    .new{
+        padding: 2px 6px;
+        font-size: .9rem;
+    }
+
+    .title{
+        font-size: .9rem;
+    }
+
+    .text{
+        font-size: .8rem;
+    }
+
+    .buy{
+        padding: .5rem .8rem;
+        font-size: .8rem;
+    }
+
+    .price h1{
+        font-size: 1.5rem;
+    }
+
+    .price i{
+        font-size: .9rem;
+    }
+
+    .size{
+        width: 30px;
+        height: 30px;
+        margin: 0 8px;
+        font-size: .9rem;
+        line-height: 30px;
+    }
+
+    .color{
+        margin: 0 6px;
+        width: 0 20px;
+        width: 20px;
+        height: 20px;
+        border-width: 4px;
+    }
+
+    .share{
+        width: 35px;
+        height: 35px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .share i{
+        font-size: .8rem;
+        line-height: 35px;
+    }
+
+    .logo{
+        width: 60px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .info{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .buy i{
+        display: none;
+    }
+
+    .containerr{
+        padding: 20px;
+    }
+}
+</style>
+<script>
+const sizes = document.querySelectorAll('.size');
+const colors = document.querySelectorAll('.color');
+const shoes = document.querySelectorAll('.shoe');
+const gradients = document.querySelectorAll('.gradient');
+const shoeBg = document.querySelector('.shoeBackground');
+
+let prevColor = "blue";
+let animationEnd = true;
+
+function changeSize(){
+    sizes.forEach(size => size.classList.remove('active'));
+    this.classList.add('active');
+}
+
+function changeColor(){
+    if(!animationEnd) return;
+    let primary = this.getAttribute('primary');
+    let color = this.getAttribute('color');
+    let shoe = document.querySelector(`.shoe[color="${color}"]`);
+    let gradient = document.querySelector(`.gradient[color="${color}"]`);
+    let prevGradient = document.querySelector(`.gradient[color="${prevColor}"]`);
+
+    if(color == prevColor) return;
+
+    colors.forEach(c => c.classList.remove('active'));
+    this.classList.add('active');
+
+    document.documentElement.style.setProperty('--primary', primary);
+    
+    shoes.forEach(s => s.classList.remove('show'));
+    shoe.classList.add('show');
+
+    gradients.forEach(g => g.classList.remove('first', 'second'));
+    gradient.classList.add('first');
+    prevGradient.classList.add('second');
+
+    prevColor = color;
+    animationEnd = false;
+
+    gradient.addEventListener('animationend', () => {
+        animationEnd = true;
+    })
+}
+
+sizes.forEach(size => size.addEventListener('click', changeSize));
+colors.forEach(c => c.addEventListener('click', changeColor));
+
+let x = window.matchMedia("(max-width: 1000px)");
+
+function changeHeight(){
+    if(x.matches){
+        let shoeHeight = shoes[0].offsetHeight;
+        shoeBg.style.height = `${shoeHeight * 0.9}px`;
+    }
+    else{
+        shoeBg.style.height = "475px";
+    }
+}
+
+changeHeight();
+
+window.addEventListener('resize', changeHeight);
+</script>
+  </body>
+</html>
